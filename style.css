@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-optical-sizing: auto;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
+  gap: 0;
+  background-color: #000;
+}
+
+nav {
+  display: grid;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+header nav {
+  grid-template-columns: 1fr 9fr;
+  padding: 2rem 4rem;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  gap: 0;
+}
+
+li {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+p {
+  position: absolute;
+  top: 0;
+  padding: 1rem;
+  color: #fff;
+  z-index: 100;
+}
+
+footer nav {
+  padding: 4rem 0rem
+}
+
+li span {
+  color: aquamarine;
+  font-style: italic;
+  font-size: 1.8rem;
+}
+
+
+.grid-six {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 20rem 20rem;
+}
+
+.large {
+  height: 20rem;
+}
+
+.grid-horizontal {
+  grid-auto-flow: column;
+}
+
+.grid-header {
+  justify-content: flex-end;
+  gap: 4rem;
+}
+
+.cars li img {
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to top, transparent 15%, black 50%);
+  mask-image: linear-gradient(to top, transparent 15%, black 50%);
+}
+
+.cars li {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.cars li img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.third {
+  transform: scale(1.5) scaleX(-1);
+}
+
+.bgimg {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  opacity: 70%;
+  filter:contrast(120%)
+}
+
+.grid-six {
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-six li {
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  place-content: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 2rem;
+  text-align: left;
+  padding: 4rem;
+}
+
+.footer li {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 10% 40%;
+}
+
+.footer li:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  color: aquamarine;
+}
+
+#hero {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+  justify-content: center;
+  padding: 8rem;
+  gap: 0;
+  height: 95vh;
+}
+
+#hero img {
+  filter: invert();
+  width: 10%;
+  margin: auto;
+}
+
+#hero h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 15rem;
+}
